@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a basic Linux File System using Binary Search Trees. The file system utilizes Binary Search Trees to efficiently store and manage directories and files. Each directory and file is organized within the tree structure, enabling operations such as printing directory contents in a lexicographic order.
+This project implements a basic Linux File System using Binary Search Trees. The file system utilizes Binary Search Trees to efficiently store and manage directories and files. Each directory and file is organized within the tree structure, enabling operations such as printing directory contents in a lexicographic order and searching for files using the `find` command.
 
 ## Implementation
 
@@ -42,14 +42,31 @@ This project implements a basic Linux File System using Binary Search Trees. The
 ### 12. `rm` function
 - Removes a file within the current directory.
 
-### 13. `main` function
+### 13. `find` function
+- Searches for a file within the file system.
+
+### 14. `main` function
 - Initializes the root directory and reads user instructions to perform file system operations.
+
+## Complexity
+
+The complexity of various operations in the file system implemented using Binary Search Trees is as follows:
+
+- Insertion of a file or directory: O(log n), where n is the number of files or directories in the tree. This is because Binary Search Trees provide efficient insertion by maintaining the tree structure.
+
+- Searching for a file or directory using `find`: O(log n) on average. Similar to insertion, searching in a Binary Search Tree is efficient due to its structure.
+
+- Listing directory contents (`ls`): O(n), where n is the number of files or directories in the current directory. This is because listing contents involves traversing all elements in the directory.
+
+- Changing directory (`cd`): O(log n), where n is the number of directories in the file system.
+
+- Removing a file or directory: O(log n), where n is the number of files or directories in the tree. Removal involves finding the node to delete, which is efficient in a Binary Search Tree.
 
 ## Usage
 
 1. Clone the repository.
 2. Compile the program.
 3. Run the executable.
-4. Enter commands such as `touch`, `mkdir`, `ls`, `cd`, `pwd`, `rm`, `rmdir`, and `quit` to interact with the simulated file system.
+4. Enter commands such as `touch`, `mkdir`, `ls`, `cd`, `pwd`, `rm`, `rmdir`, `find`, and `quit` to interact with the simulated file system.
 
 You're welcome to explore and contribute to this project! If you encounter any issues or have suggestions for improvements, please open an issue or pull request. Your contributions are highly appreciated.
