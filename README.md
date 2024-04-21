@@ -61,12 +61,3 @@ The complexity of various operations in the file system implemented using Binary
 - Changing directory (`cd`): O(log n), where n is the number of directories in the file system.
 
 - Removing a file or directory: O(log n), where n is the number of files or directories in the tree. Removal involves finding the node to delete, which is efficient in a Binary Search Tree.
-
-## Usage
-
-1. Clone the repository.
-2. Compile the program.
-3. Run the executable.
-4. Enter commands such as `touch`, `mkdir`, `ls`, `cd`, `pwd`, `rm`, `rmdir`, `find`, and `quit` to interact with the simulated file system.
-
-You're welcome to explore and contribute to this project! If you encounter any issues or have suggestions for improvements, please open an issue or pull request. Your contributions are highly appreciated.
